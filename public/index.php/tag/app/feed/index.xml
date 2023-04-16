@@ -9,7 +9,7 @@
 
 <channel>
 	<title>App &#8211; Hepmade</title>
-	<atom:link href="http://localhost/index.php/tag/app/feed/?simply_static_page=570" rel="self" type="application/rss+xml" />
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
 	<link>./../../../../index.html</link>
 	<description> Simplifying Software for You</description>
 	<lastBuildDate>Mon, 14 Oct 2019 18:25:24 +0000</lastBuildDate>
