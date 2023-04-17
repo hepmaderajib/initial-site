@@ -1,0 +1,2095 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]>   <html class="no-js oldie ie9 ie" lang="en-US" > <![endif]--><!--[if (gt IE 9)|!(IE)]><!--><html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- devices setting -->
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,width=device-width">
+
+<!-- outputs by wp_head -->
+<title>Full Stack App Development &#8211; Hepmade</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//use.fontawesome.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="alternate" type="application/rss+xml" title="Hepmade &raquo; Feed" href="./../feed/index.html">
+<link rel="alternate" type="application/rss+xml" title="Hepmade &raquo; Comments Feed" href="./../comments/feed/index.html">
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":".\/\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){p.clearRect(0,0,i.width,i.height),p.fillText(e,0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(t,0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s("🏳️‍⚧️","🏳️​⚧️")?!1:!s("🇺🇳","🇺​🇳")&&!s("🏴󠁧󠁢󠁥󠁮󠁧󠁿","🏴​󠁧​󠁢​󠁥​󠁮​󠁧​󠁿");case"emoji":return!s("🫱🏻‍🫲🏿","🫱🏻​🫲🏿")}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style>img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="./../../wp-includes/css/dist/block-library/style.min.css?ver=6.2" media="all">
+<style id="depicter-slider-style-inline-css">/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-depicter {
+  background-color: #21759b;
+  color: #fff;
+  padding: 2px;
+}
+
+/*# sourceMappingURL=style-index.css.map*/</style>
+<link rel="stylesheet" id="classic-theme-styles-css" href="./../../wp-includes/css/classic-themes.min.css?ver=6.2" media="all">
+<style id="global-styles-inline-css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}</style>
+<link rel="stylesheet" id="cee-common-card-style-css" href="./../../wp-content/plugins/card-elements-for-elementor/assets/css/common-card-style.css?ver=6.2" media="all">
+<link rel="stylesheet" id="cee-profile-card-style-css" href="./../../wp-content/plugins/card-elements-for-elementor/assets/css/profile-card-style.css?ver=6.2" media="all">
+<link rel="stylesheet" id="cee-testimonial-card-style-css" href="./../../wp-content/plugins/card-elements-for-elementor/assets/css/testimonial-card-style.css?ver=6.2" media="all">
+<link rel="stylesheet" id="cee-post-card-style-css" href="./../../wp-content/plugins/card-elements-for-elementor/assets/css/post-card-style.css?ver=6.2" media="all">
+<link rel="stylesheet" id="cee-font-awesome-css" href="./../../wp-content/plugins/card-elements-for-elementor/assets/css/font-awesome.css?ver=6.2" media="all">
+<link rel="stylesheet" id="contact-form-7-css" href="./../../wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.7.4" media="all">
+<link rel="stylesheet" id="depicter-front-pre-css" href="./../../wp-content/plugins/depicter/resources/styles/player/depicter-pre.css?ver=1681713207" media="all">
+<link rel="preload" as="style" onload="this.rel='stylesheet';this.onload=null" id="depicter--front-common-css" href="./../../wp-content/plugins/depicter/resources/styles/player/depicter.css?ver=1681713207" media="all">
+<link rel="stylesheet" id="ufw-style-css" href="./../../wp-content/plugins/ultimate-floating-widgets/public/css/style.css?ver=2.5" media="all">
+<link rel="stylesheet" id="ufw-anim-css" href="./../../wp-content/plugins/ultimate-floating-widgets/public/css/animate.min.css?ver=6.2" media="all">
+<link rel="stylesheet" id="fontawesome-css-css" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css?ver=6.2" media="all">
+<link rel="stylesheet" id="wp-ulike-css" href="./../../wp-content/plugins/wp-ulike/assets/css/wp-ulike.min.css?ver=4.6.5" media="all">
+<link rel="stylesheet" id="auxin-base-css" href="./../../wp-content/themes/phlox/css/base.css?ver=2.11.0" media="all">
+<link rel="stylesheet" id="auxin-front-icon-css" href="./../../wp-content/themes/phlox/css/auxin-icon.css?ver=2.11.0" media="all">
+<link rel="stylesheet" id="auxin-main-css" href="./../../wp-content/themes/phlox/css/main.css?ver=2.11.0" media="all">
+<link rel="stylesheet" id="elementor-icons-css" href="./../../wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.18.0" media="all">
+<link rel="stylesheet" id="elementor-frontend-legacy-css" href="./../../wp-content/plugins/elementor/assets/css/frontend-legacy.min.css?ver=3.11.1" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="./../../wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.11.1" media="all">
+<style id="elementor-frontend-inline-css">.elementor-664 .elementor-element.elementor-element-7dbf51a .aux-modern-heading-primary{color:var( --auxin-featured-color-3 );}.elementor-664 .elementor-element.elementor-element-7dbf51a .aux-modern-heading-secondary{color:var( --auxin-featured-color-1 );}.elementor-664 .elementor-element.elementor-element-e6c710c .aux-ico-box{color:var( --auxin-featured-color-3 );}.elementor-664 .elementor-element.elementor-element-e6c710c .col-title a, .elementor-664 .elementor-element.elementor-element-e6c710c .col-title{color:var( --auxin-featured-color-2 ) !important;}.elementor-664 .elementor-element.elementor-element-e6c710c .widget-content{color:var( --auxin-featured-color-4 ) !important;}.elementor-664 .elementor-element.elementor-element-d7e26c9 .aux-ico-box{color:var( --auxin-featured-color-3 );}.elementor-664 .elementor-element.elementor-element-d7e26c9 .col-title a, .elementor-664 .elementor-element.elementor-element-d7e26c9 .col-title{color:var( --auxin-featured-color-2 ) !important;}.elementor-664 .elementor-element.elementor-element-d7e26c9 .widget-content{color:var( --auxin-featured-color-4 ) !important;}.elementor-664 .elementor-element.elementor-element-bfb52a6 .aux-ico-box{color:var( --auxin-featured-color-3 );}.elementor-664 .elementor-element.elementor-element-bfb52a6 .col-title a, .elementor-664 .elementor-element.elementor-element-bfb52a6 .col-title{color:var( --auxin-featured-color-2 ) !important;}.elementor-664 .elementor-element.elementor-element-bfb52a6 .widget-content{color:var( --auxin-featured-color-4 ) !important;}.elementor-664 .elementor-element.elementor-element-52890e8 .aux-ico-box{color:var( --auxin-featured-color-3 );}.elementor-664 .elementor-element.elementor-element-52890e8 .col-title a, .elementor-664 .elementor-element.elementor-element-52890e8 .col-title{color:var( --auxin-featured-color-2 ) !important;}.elementor-664 .elementor-element.elementor-element-52890e8 .widget-content{color:var( --auxin-featured-color-4 ) !important;}.elementor-664 .elementor-element.elementor-element-dd03e20 .aux-modern-heading-primary{color:var( --auxin-featured-color-3 );}.elementor-664 .elementor-element.elementor-element-dd03e20 .aux-modern-heading-secondary{color:var( --auxin-featured-color-1 );}.elementor-664 .elementor-element.elementor-element-30481b6 .col-title a, .elementor-664 .elementor-element.elementor-element-30481b6 .col-title{color:var( --auxin-featured-color-2 ) !important;}.elementor-664 .elementor-element.elementor-element-30481b6:hover .col-title a, .elementor-664 .elementor-element.elementor-element-30481b6:hover .col-title{color:var( --auxin-featured-color-1 ) !important;}.elementor-664 .elementor-element.elementor-element-30481b6 .widget-content{color:var( --auxin-featured-color-4 ) !important;}.elementor-664 .elementor-element.elementor-element-30481b6:hover .widget-content{color:var( --auxin-featured-color-5 ) !important;}.elementor-664 .elementor-element.elementor-element-30481b6 > .elementor-widget-container{background-color:var( --auxin-featured-color-1 );}.elementor-664 .elementor-element.elementor-element-8ba90bb .col-title a, .elementor-664 .elementor-element.elementor-element-8ba90bb .col-title{color:var( --auxin-featured-color-2 ) !important;}.elementor-664 .elementor-element.elementor-element-8ba90bb:hover .col-title a, .elementor-664 .elementor-element.elementor-element-8ba90bb:hover .col-title{color:var( --auxin-featured-color-1 ) !important;}.elementor-664 .elementor-element.elementor-element-8ba90bb .widget-content{color:var( --auxin-featured-color-4 ) !important;}.elementor-664 .elementor-element.elementor-element-8ba90bb:hover .widget-content{color:var( --auxin-featured-color-5 ) !important;}.elementor-664 .elementor-element.elementor-element-8ba90bb > .elementor-widget-container{background-color:var( --auxin-featured-color-1 );}.elementor-664 .elementor-element.elementor-element-ca01447 .col-title a, .elementor-664 .elementor-element.elementor-element-ca01447 .col-title{color:var( --auxin-featured-color-2 ) !important;}.elementor-664 .elementor-element.elementor-element-ca01447:hover .col-title a, .elementor-664 .elementor-element.elementor-element-ca01447:hover .col-title{color:var( --auxin-featured-color-1 ) !important;}.elementor-664 .elementor-element.elementor-element-ca01447 .widget-content{color:var( --auxin-featured-color-4 ) !important;}.elementor-664 .elementor-element.elementor-element-ca01447:hover .widget-content{color:var( --auxin-featured-color-5 ) !important;}.elementor-664 .elementor-element.elementor-element-ca01447 > .elementor-widget-container{background-color:var( --auxin-featured-color-1 );}.elementor-664 .elementor-element.elementor-element-0a0043b .aux-modern-heading-primary{color:var( --auxin-featured-color-3 );}.elementor-664 .elementor-element.elementor-element-0a0043b .aux-modern-heading-secondary{color:var( --auxin-featured-color-1 );}.elementor-664 .elementor-element.elementor-element-f7a81da .col-title a, .elementor-664 .elementor-element.elementor-element-f7a81da .col-title{color:var( --auxin-featured-color-2 ) !important;}.elementor-664 .elementor-element.elementor-element-f7a81da:hover .col-title a, .elementor-664 .elementor-element.elementor-element-f7a81da:hover .col-title{color:var( --auxin-featured-color-1 ) !important;}.elementor-664 .elementor-element.elementor-element-f7a81da .widget-content{color:var( --auxin-featured-color-4 ) !important;}.elementor-664 .elementor-element.elementor-element-f7a81da:hover .widget-content{color:var( --auxin-featured-color-5 ) !important;}.elementor-664 .elementor-element.elementor-element-f7a81da > .elementor-widget-container{background-color:var( --auxin-featured-color-1 );}.elementor-664 .elementor-element.elementor-element-f0a7dc7 .col-title a, .elementor-664 .elementor-element.elementor-element-f0a7dc7 .col-title{color:var( --auxin-featured-color-2 ) !important;}.elementor-664 .elementor-element.elementor-element-f0a7dc7:hover .col-title a, .elementor-664 .elementor-element.elementor-element-f0a7dc7:hover .col-title{color:var( --auxin-featured-color-1 ) !important;}.elementor-664 .elementor-element.elementor-element-f0a7dc7 .widget-content{color:var( --auxin-featured-color-4 ) !important;}.elementor-664 .elementor-element.elementor-element-f0a7dc7:hover .widget-content{color:var( --auxin-featured-color-5 ) !important;}.elementor-664 .elementor-element.elementor-element-f0a7dc7 > .elementor-widget-container{background-color:var( --auxin-featured-color-1 );}.elementor-664 .elementor-element.elementor-element-01d0a6b .col-title a, .elementor-664 .elementor-element.elementor-element-01d0a6b .col-title{color:var( --auxin-featured-color-2 ) !important;}.elementor-664 .elementor-element.elementor-element-01d0a6b:hover .col-title a, .elementor-664 .elementor-element.elementor-element-01d0a6b:hover .col-title{color:var( --auxin-featured-color-1 ) !important;}.elementor-664 .elementor-element.elementor-element-01d0a6b .widget-content{color:var( --auxin-featured-color-4 ) !important;}.elementor-664 .elementor-element.elementor-element-01d0a6b:hover .widget-content{color:var( --auxin-featured-color-5 ) !important;}.elementor-664 .elementor-element.elementor-element-01d0a6b > .elementor-widget-container{background-color:var( --auxin-featured-color-1 );}.elementor-664 .elementor-element.elementor-element-d8a0c4b .col-title a, .elementor-664 .elementor-element.elementor-element-d8a0c4b .col-title{color:var( --auxin-featured-color-2 ) !important;}.elementor-664 .elementor-element.elementor-element-d8a0c4b:hover .col-title a, .elementor-664 .elementor-element.elementor-element-d8a0c4b:hover .col-title{color:var( --auxin-featured-color-1 ) !important;}.elementor-664 .elementor-element.elementor-element-d8a0c4b .widget-content{color:var( --auxin-featured-color-4 ) !important;}.elementor-664 .elementor-element.elementor-element-d8a0c4b:hover .widget-content{color:var( --auxin-featured-color-5 ) !important;}.elementor-664 .elementor-element.elementor-element-d8a0c4b > .elementor-widget-container{background-color:var( --auxin-featured-color-1 );}.elementor-664 .elementor-element.elementor-element-52f587e .col-title a, .elementor-664 .elementor-element.elementor-element-52f587e .col-title{color:var( --auxin-featured-color-2 ) !important;}.elementor-664 .elementor-element.elementor-element-52f587e:hover .col-title a, .elementor-664 .elementor-element.elementor-element-52f587e:hover .col-title{color:var( --auxin-featured-color-1 ) !important;}.elementor-664 .elementor-element.elementor-element-52f587e .widget-content{color:var( --auxin-featured-color-4 ) !important;}.elementor-664 .elementor-element.elementor-element-52f587e:hover .widget-content{color:var( --auxin-featured-color-5 ) !important;}.elementor-664 .elementor-element.elementor-element-52f587e > .elementor-widget-container{background-color:var( --auxin-featured-color-1 );}.elementor-664 .elementor-element.elementor-element-48df391 .aux-modern-heading-primary{color:var( --auxin-featured-color-3 );}.elementor-664 .elementor-element.elementor-element-48df391 .aux-modern-heading-secondary{color:var( --auxin-featured-color-1 );}.elementor-664 .elementor-element.elementor-element-1ad55fa .col-title a, .elementor-664 .elementor-element.elementor-element-1ad55fa .col-title{color:var( --auxin-featured-color-2 ) !important;}.elementor-664 .elementor-element.elementor-element-1ad55fa:hover .col-title a, .elementor-664 .elementor-element.elementor-element-1ad55fa:hover .col-title{color:var( --auxin-featured-color-1 ) !important;}.elementor-664 .elementor-element.elementor-element-1ad55fa .widget-content{color:var( --auxin-featured-color-4 ) !important;}.elementor-664 .elementor-element.elementor-element-1ad55fa:hover .widget-content{color:var( --auxin-featured-color-5 ) !important;}.elementor-664 .elementor-element.elementor-element-1ad55fa > .elementor-widget-container{background-color:var( --auxin-featured-color-1 );}/* Start custom CSS for aux_text, class: .elementor-element-30481b6 */@media screen and (max-width:1441px) and (min-width:767px){
+    .elementor-664 .elementor-element.elementor-element-30481b6 .col-title{
+        font-size:16px;
+    }
+    .elementor-664 .elementor-element.elementor-element-30481b6 .widget-content{
+        font-size:17px;
+    }
+}/* End custom CSS */
+/* Start custom CSS for aux_text, class: .elementor-element-8ba90bb */@media screen and (max-width:1441px) and (min-width:767px){
+    .elementor-664 .elementor-element.elementor-element-8ba90bb .col-title{
+        font-size:16px;
+    }
+    .elementor-664 .elementor-element.elementor-element-8ba90bb .widget-content{
+        font-size:17px;
+    }
+}/* End custom CSS */
+/* Start custom CSS for aux_text, class: .elementor-element-ca01447 */@media screen and (max-width:1441px) and (min-width:767px){
+    .elementor-664 .elementor-element.elementor-element-ca01447 .col-title{
+        font-size:16px;
+    }
+    .elementor-664 .elementor-element.elementor-element-ca01447 .widget-content{
+        font-size:17px;
+    }
+}/* End custom CSS */
+/* Start custom CSS for aux_text, class: .elementor-element-f7a81da */@media screen and (max-width:1441px) and (min-width:767px){
+    .elementor-664 .elementor-element.elementor-element-f7a81da .col-title{
+        font-size:16px;
+    }
+    .elementor-664 .elementor-element.elementor-element-f7a81da .widget-content{
+        font-size:17px;
+    }
+}/* End custom CSS */
+/* Start custom CSS for aux_text, class: .elementor-element-f0a7dc7 */@media screen and (max-width:1441px) and (min-width:767px){
+    .elementor-664 .elementor-element.elementor-element-f0a7dc7 .col-title{
+        font-size:16px;
+    }
+    .elementor-664 .elementor-element.elementor-element-f0a7dc7 .widget-content{
+        font-size:17px;
+    }
+}/* End custom CSS */
+/* Start custom CSS for aux_text, class: .elementor-element-01d0a6b */@media screen and (max-width:1441px) and (min-width:767px){
+    .elementor-664 .elementor-element.elementor-element-01d0a6b .col-title{
+        font-size:16px;
+    }
+    .elementor-664 .elementor-element.elementor-element-01d0a6b .widget-content{
+        font-size:17px;
+    }
+}/* End custom CSS */
+/* Start custom CSS for aux_text, class: .elementor-element-d8a0c4b */@media screen and (max-width:1441px) and (min-width:767px){
+    .elementor-664 .elementor-element.elementor-element-d8a0c4b .col-title{
+        font-size:16px;
+    }
+    .elementor-664 .elementor-element.elementor-element-d8a0c4b .widget-content{
+        font-size:17px;
+    }
+}/* End custom CSS */
+/* Start custom CSS for aux_text, class: .elementor-element-52f587e */@media screen and (max-width:1441px) and (min-width:767px){
+    .elementor-664 .elementor-element.elementor-element-52f587e .col-title{
+        font-size:16px;
+    }
+    .elementor-664 .elementor-element.elementor-element-52f587e .widget-content{
+        font-size:17px;
+    }
+}/* End custom CSS */
+/* Start custom CSS for aux_text, class: .elementor-element-1ad55fa */@media screen and (max-width:1441px) and (min-width:767px){
+    .elementor-664 .elementor-element.elementor-element-1ad55fa .col-title{
+        font-size:16px;
+    }
+    .elementor-664 .elementor-element.elementor-element-1ad55fa .widget-content{
+        font-size:17px;
+    }
+}/* End custom CSS */
+.elementor-249 .elementor-element.elementor-element-d052931 .aux-menu-depth-0 > .aux-item-content{color:var( --auxin-featured-color-4 );}.elementor-249 .elementor-element.elementor-element-d052931 .aux-menu-depth-0.aux-hover > .aux-item-content {color:var( --auxin-featured-color-2 ) !important;}
+.elementor-267 .elementor-element.elementor-element-f496eb7 .aux-menu-depth-0 > .aux-item-content{color:var( --auxin-featured-color-5 );}.elementor-267 .elementor-element.elementor-element-f496eb7 .aux-menu-depth-0.aux-hover > .aux-item-content {color:var( --auxin-featured-color-1 ) !important;}.elementor-267 .elementor-element.elementor-element-bba4cea .mc4wp-form input[type="text"],.elementor-267 .elementor-element.elementor-element-bba4cea .mc4wp-form input[type="email"]{color:var( --auxin-featured-color-1 );}/* Start custom CSS for aux_mailchimp, class: .elementor-element-bba4cea */.elementor-267 .elementor-element.elementor-element-bba4cea input{
+    border:none;
+}
+.elementor-267 .elementor-element.elementor-element-bba4cea input[type="submit"]{
+    position: absolute;
+    right: 0;
+    top:5px;
+}/* End custom CSS */</style>
+<link rel="stylesheet" id="swiper-css" href="./../../wp-content/plugins/elementor/assets/lib/swiper/css/swiper.min.css?ver=5.3.6" media="all">
+<link rel="stylesheet" id="elementor-post-250-css" href="./../../wp-content/uploads/elementor/css/post-250.css?ver=1681727928" media="all">
+<link rel="stylesheet" id="auxin-elementor-base-css" href="./../../wp-content/themes/phlox/css/other/elementor.css?ver=2.11.0" media="all">
+<link rel="stylesheet" id="auxin-elementor-widgets-css" href="./../../wp-content/plugins/auxin-elements/admin/assets/css/elementor-widgets.css?ver=2.11.1" media="all">
+<link rel="stylesheet" id="mediaelement-css" href="./../../wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17" media="all">
+<link rel="stylesheet" id="wp-mediaelement-css" href="./../../wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.2" media="all">
+<link rel="stylesheet" id="elementor-post-664-css" href="./../../wp-content/uploads/elementor/css/post-664.css?ver=1681735106" media="all">
+<link rel="stylesheet" id="auxin-fonts-google-css" href="//fonts.googleapis.com/css?family=Quicksand%3A300%2Cregular%2C500%2C600%2C700%7CNunito%3A200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;ver=5.8" media="all">
+<link rel="stylesheet" id="auxin-custom-css" href="./../../wp-content/uploads/phlox/custom.css?ver=5.8" media="all">
+<link rel="stylesheet" id="elementor-post-249-css" href="./../../wp-content/uploads/elementor/css/post-249.css?ver=1681727929" media="all">
+<link rel="stylesheet" id="elementor-post-267-css" href="./../../wp-content/uploads/elementor/css/post-267.css?ver=1681727929" media="all">
+<link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CAlbert+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.2" media="all">
+<link rel="stylesheet" id="elementor-icons-shared-0-css" href="./../../wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-solid-css" href="./../../wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-regular-css" href="./../../wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css?ver=5.15.3" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-brands-css" href="./../../wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.15.3" media="all">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<script src="./../../wp-includes/js/jquery/jquery.min.js?ver=3.6.3" id="jquery-core-js"></script>
+<script src="./../../wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0" id="jquery-migrate-js"></script>
+<script src="./../../wp-content/plugins/ultimate-floating-widgets/public/js/script.js?ver=2.5" id="ufw-script-js"></script>
+<script id="auxin-modernizr-js-extra">var auxin = {"ajax_url":".\/\/wp-admin\/admin-ajax.php","is_rtl":"","is_reponsive":"1","is_framed":"","frame_width":"20","wpml_lang":"en","uploadbaseurl":".\/\/wp-content\/uploads","nonce":"0e29b772fd"};</script>
+<script id="auxin-modernizr-js-before">
+/* < ![CDATA[ */
+function auxinNS(n){for(var e=n.split("."),a=window,i="",r=e.length,t=0;r>t;t++)"window"!=e[t]&&(i=e[t],a[i]=a[i]||{},a=a[i]);return a;}
+/* ]]> */
+</script>
+<script src="./../../wp-content/themes/phlox/js/solo/modernizr-custom.min.js?ver=2.11.0" id="auxin-modernizr-js"></script>
+<link rel="https://api.w.org/" href="./../wp-json/index.html">
+<link rel="alternate" type="application/json" href="./../wp-json/wp/v2/pages/664/index.html">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="./../../xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="./../../wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 6.2">
+<link rel="canonical" href="./index.html">
+<link rel="shortlink" href="./../../index.html?p=664">
+<link rel="alternate" type="application/json+oembed" href="./../wp-json/oembed/1.0/embed/index.html?url=.%2F%2Findex.php%2Ffull_stack_app%2F">
+<link rel="alternate" type="text/xml+oembed" href="./../wp-json/oembed/1.0/embed/index.html?url=.%2F%2Findex.php%2Ffull_stack_app%2F#038;format=xml">
+    <meta name="title" content="Full Stack App Development">
+    <meta name="description" content="Full Stack Web Development We have an experience of more than 20 years in full stack development working over a wide range of frontend, backend and deployment technologies. Our team take care of every step starting from product ideation, UX design to cloud development. We have domain expertise insurance, finance, ed-tech, fin-tech, retail, ecommerce, enterprise [&hellip;]">
+    <!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#1bb0ce">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#1bb0ce">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<meta name="generator" content="Elementor 3.11.1; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<link rel="icon" href="./../../wp-content/uploads/2020/03/Hepmade-Logo-1.png" sizes="32x32">
+<link rel="icon" href="./../../wp-content/uploads/2020/03/Hepmade-Logo-1.png" sizes="192x192">
+<link rel="apple-touch-icon" href="./../../wp-content/uploads/2020/03/Hepmade-Logo-1.png">
+<meta name="msapplication-TileImage" content="./../../wp-content/uploads/2020/03/Hepmade-Logo-1.png">
+		<style id="wp-custom-css">.aux-fold {
+		padding-left : 0;
+		padding-right : 15px;
+}
+@media screen and (min-width: 700px) {
+		.aux-goto-top-btn {
+			bottom : 80px;
+	}
+}
+
+.single-post #respond {
+	max-width : 1130px;
+	margin-left : auto;
+	margin-right : auto;
+}
+.single-post .hentry .entry-meta {
+	max-width : 1130px;
+	margin-left : auto;
+	margin-right : auto;
+}
+.single-post .aux-media-frame.aux-media-image img {
+	border-radius : 20px;
+	box-shadow : 0 0 60px rgba(0, 0, 0, 0.08);
+}
+.single-post .aux-media-frame.aux-media-image {
+	overflow : visible;
+}
+.single-post .aux-primary .hentry .entry-title, .single-post .hentry .entry-info {
+	text-align : center;
+}
+.single-post .hentry .entry-info .entry-author::before {
+	margin-right : 0;
+	background-color : #000000;
+}
+.single-post .hentry footer.entry-meta .entry-tax a {
+	color : #CFCFCF;
+	font-weight : 400;
+	text-decoration : none;
+}
+.single-post .hentry footer.entry-meta .entry-tax a:hover {
+	color : #0CD68A;
+}
+.single-post .hentry footer.entry-meta .entry-tax i {
+	color : #CFCFCF;
+}
+.single-post .hentry .entry-meta {
+	padding : 1.6em 0 1.6em 0;
+}
+.single-post .aux-inline-inputs {
+	display : inline-block;
+	width : 49.8%;
+}
+#commentform input[type="text"], #commentform input[type="email"] {
+	width : 98%;
+	height : 50px;
+	padding-left : 8%;
+	background-color : #EFEFEF;
+	border-radius : 50px;
+	border : none;
+	margin-bottom : 3%;
+	margin-top : 5%;
+}
+#commentform input[type="email"] {
+	margin-left : 2%;
+}
+#commentform textarea {
+	background-color : #EFEFEF;
+	border : none;
+	border-radius : 20px;
+	resize : none;
+	min-height : 263px;
+	height : 263px;
+	padding-left : 4%;
+	padding-top : 2%;
+}
+#commentform input[type="submit"] {
+	float : right;
+	background-image : linear-gradient(284deg,#0CD68A,#309F5E);
+	border-radius : 25px;
+	box-shadow : 0 16px 40px rgba(12, 214, 138, 0.3);
+	width : 200px;
+	height : 50px;
+}
+#commentform input[type="text"]::placeholder, #commentform input[type="email"]::placeholder, #commentform textarea::placeholder {
+	font-size : 16px;
+	font-style : normal;
+	color : #000000;
+	opacity : 0.7;
+}</style>
+		<!-- end wp_head -->
+</head>
+
+
+<body class="page-template-default page page-id-664 wp-custom-logo elementor-default elementor-kit-250 elementor-page elementor-page-664 phlox aux-dom-unready aux-full-width aux-resp aux-s-fhd aux-top-sticky  aux-page-animation-off _auxels" data-framed="">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg>
+<div id="inner-body">
+
+    <header class="aux-elementor-header" id="site-elementor-header" itemscope="itemscope" itemtype="https://schema.org/WPHeader" data-sticky-height="80">
+        <div class="aux-wrapper">
+            <div class="aux-header aux-header-elements-wrapper">
+            		<div data-elementor-type="header" data-elementor-id="249" class="elementor elementor-249">
+						<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-54a26d6 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="54a26d6" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-99ffd65" data-id="99ffd65" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-97c6a51 elementor-widget__width-auto elementor-widget elementor-widget-image" data-id="97c6a51" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+													<a href="./../../index.html">
+							<img width="1024" height="1024" src="./../../wp-content/uploads/2020/03/Hepmade-Logo.png" class="attachment-large size-large wp-image-285" alt="">								</a>
+														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-fae9e33 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-aux_modern_heading" data-id="fae9e33" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="aux_modern_heading.default">
+				<div class="elementor-widget-container">
+			<section class="aux-widget-modern-heading">
+            <div class="aux-widget-inner"><a href="./../../index.html" class="aux-modern-heading-primary-link"><span class="aux-modern-heading-primary">Hepmade</span></a></div>
+        </section>		</div>
+				</div>
+				<div class="elementor-element elementor-element-d052931 elementor-widget__width-auto elementor-widget-tablet__width-auto elementor-widget-mobile__width-auto elementor-widget elementor-widget-aux_menu_box" data-id="d052931" data-element_type="widget" data-widget_type="aux_menu_box.default">
+				<div class="elementor-widget-container">
+			<div class="aux-elementor-header-menu aux-nav-menu-element aux-nav-menu-element-d052931">
+<div class="aux-burger-box" data-target-panel="overlay" data-target-content=".elementor-element-d052931 .aux-master-menu"><div class="aux-burger aux-lite-small"><span class="mid-line"></span></div></div>
+<!-- start master menu -->
+<nav id="master-menu-elementor-d052931" class="menu-header-menu-container">
+
+	<ul id="menu-header-menu" class="aux-master-menu aux-no-js aux-skin-classic aux-with-indicator aux-horizontal" data-type="horizontal" data-switch-type="toggle" data-switch-parent=".elementor-element-d052931 .aux-fs-popup .aux-fs-menu" data-switch-width="768">
+		<!-- start single menu -->
+		<li id="menu-item-361" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-361 aux-menu-depth-0 aux-menu-root-1 aux-menu-item">
+			<a href="#section3" class="aux-item-content">
+				<span class="aux-menu-label">About Us</span>
+			</a>
+		</li>
+		<!-- end single menu -->
+		<!-- start single menu -->
+		<li id="menu-item-362" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-362 aux-menu-depth-0 aux-menu-root-2 aux-menu-item">
+			<a href="#section4" class="aux-item-content">
+				<span class="aux-menu-label">Services</span>
+			</a>
+		</li>
+		<!-- end single menu -->
+		<!-- start single menu -->
+		<li id="menu-item-363" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-363 aux-menu-depth-0 aux-menu-root-3 aux-menu-item">
+			<a href="#projects" class="aux-item-content">
+				<span class="aux-menu-label">Projects</span>
+			</a>
+		</li>
+		<!-- end single menu -->
+
+		<!-- start submenu -->
+		<li id="menu-item-607" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-607 aux-menu-depth-0 aux-menu-root-4 aux-menu-item">
+			<a href="#" class="aux-item-content">
+				<span class="aux-menu-label">Tech</span>
+			</a>
+
+		<ul class="sub-menu aux-submenu">
+			<li id="menu-item-689" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-664 current_page_item menu-item-689 aux-menu-depth-1 aux-menu-item">
+				<a href="./index.html" class="aux-item-content">
+					<span class="aux-menu-label">Full Stack Web Development</span>
+				</a>
+			</li>
+		</ul>
+		</li>
+		<!-- end submenu -->
+		<!-- start single menu -->
+		<li id="menu-item-364" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-364 aux-menu-depth-0 aux-menu-root-5 aux-menu-item">
+			<a href="#career" class="aux-item-content">
+				<span class="aux-menu-label">Careers</span>
+			</a>
+		</li>
+		<!-- end single menu -->
+	</ul>
+
+</nav>
+<!-- end master menu -->
+<section class="aux-fs-popup aux-fs-menu-layout-center aux-indicator"><div class="aux-panel-close"><div class="aux-close aux-cross-symbol aux-thick-medium"></div></div>
+<div class="aux-fs-menu" data-menu-title=""></div></section>
+</div>
+<style>@media only screen and (min-width: 769px) { .elementor-element-d052931 .aux-burger-box { display: none } }</style>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+									</div>
+			</div>
+					</div>
+		            </div>
+<!-- end of header-elements -->
+        </div>
+<!-- end of wrapper -->
+    </header><!-- end header -->
+
+    <main id="main" class="aux-main aux-territory  aux-single aux-page aux-boxed-container aux-content-top-margin no-sidebar aux-sidebar-style-border aux-user-entry">
+        <div class="aux-wrapper">
+            <div class="aux-container aux-fold">
+
+                <div id="primary" class="aux-primary">
+                    <div class="content" role="main">
+
+                        
+                
+                        
+                        <article id="post-664" class="post-664 page type-page status-publish hentry">
+
+                            <div class="entry-main">
+
+                                <div class="entry-content">
+
+                                    		<div data-elementor-type="wp-page" data-elementor-id="664" class="elementor elementor-664">
+						<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-ee3395c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ee3395c" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-f7b6da3" data-id="f7b6da3" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-33a95ff elementor-view-framed aux-appear-watch-animation aux-zoom-in-1 elementor-shape-circle elementor-widget elementor-widget-icon" data-id="33a95ff" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<i aria-hidden="true" class="auxicon auxicon-computer-network-streamline"></i>			</div>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-a9909b1" data-id="a9909b1" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-791267c aux-appear-watch-animation aux-slide-from-right elementor-widget elementor-widget-heading" data-id="791267c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Full Stack Web Development</h2>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-307b9d9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="307b9d9" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b9c9434" data-id="b9c9434" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-d169fb8 elementor-invisible elementor-widget elementor-widget-image" data-id="d169fb8" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_delay&quot;:5}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="1024" height="693" src="./../../wp-content/uploads/2023/04/1904.i305.016_programmer-professional-illustration.jpg" class="attachment-large size-large wp-image-682" alt="">														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-253e376" data-id="253e376" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-8e43480 elementor-drop-cap-yes aux-appear-watch-animation aux-fade-in-up-1 elementor-drop-cap-view-default elementor-widget elementor-widget-text-editor" data-id="8e43480" data-element_type="widget" data-settings="{&quot;drop_cap&quot;:&quot;yes&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>We have an experience of more than 20 years in full stack development working over a wide range of frontend, backend and deployment technologies. Our team take care of every step starting from product ideation, UX design to cloud development.</p>
+<p>We have domain expertise <strong>insurance, finance, ed-tech, fin-tech, retail, ecommerce, enterprise software</strong> and more.</p>
+<p>When we build anything, we build it robust and secure. Hence our development process always takes care of aesthetics, security, integrity and scalability of a software.</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-dccf229 elementor-section-full_width aux-appear-watch-animation aux-mask-from-left elementor-section-height-default elementor-section-height-default" data-id="dccf229" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-72eba24 aux-appear-watch-animation aux-fade-in-up-1" data-id="72eba24" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-7dbf51a aux-appear-watch-animation aux-fade-in-up-1 elementor-widget elementor-widget-aux_modern_heading" data-id="7dbf51a" data-element_type="widget" data-widget_type="aux_modern_heading.default">
+				<div class="elementor-widget-container">
+			<section class="aux-widget-modern-heading">
+            <div class="aux-widget-inner"><h1 class="aux-modern-heading-primary">What we offer ?
+</h1></div>
+        </section>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-d603bac elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d603bac" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-5180769 aux-appear-watch-animation aux-fade-in-right-1" data-id="5180769" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-e6c710c elementor-widget elementor-widget-aux_text" data-id="e6c710c" data-element_type="widget" data-widget_type="aux_text.default">
+				<div class="elementor-widget-container">
+			<section class="widget-container aux-widget-text aux-parent-au19efc710">        <div class="aux-widget-advanced-text aux-wrap-style-simple aux-ico-pos-top aux-text-center aux-text-resp- aux-text-color-dark aux-text-widget-bg-center aux-text-no-content ">
+        
+                            <div class="aux-text-widget-header ">
+                        <div class="aux-ico-box aux-ico-large aux-ico-shape-circle aux-ico-clear ">
+                                                            <span class="aux-ico auxicon auxicon-html5"> </span>
+                                                    </div>
+                </div>
+            
+            <div class="aux-text-inner aux-text-widget-content">
+                                <h4 class="col-title">Frontend Architecture</h4>
+                            </div>
+        </div>
+                    <div class="aux-text-widget-footer">
+                <div class="aux-border-shape-none ">
+                                </div>
+            </div>
+        
+</section><!-- widget-container -->		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-7a62ad9 aux-appear-watch-animation aux-fade-in-right-1" data-id="7a62ad9" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-d7e26c9 elementor-widget elementor-widget-aux_text" data-id="d7e26c9" data-element_type="widget" data-widget_type="aux_text.default">
+				<div class="elementor-widget-container">
+			<section class="widget-container aux-widget-text aux-parent-audcd6048b">        <div class="aux-widget-advanced-text aux-wrap-style-simple aux-ico-pos-top aux-text-center aux-text-resp- aux-text-color-dark aux-text-widget-bg-center aux-text-no-content ">
+        
+                            <div class="aux-text-widget-header ">
+                        <div class="aux-ico-box aux-ico-large aux-ico-shape-circle aux-ico-clear ">
+                                                            <span class="aux-ico fas fa-code"> </span>
+                                                    </div>
+                </div>
+            
+            <div class="aux-text-inner aux-text-widget-content">
+                                <h4 class="col-title">Backend Architecture</h4>
+                            </div>
+        </div>
+                    <div class="aux-text-widget-footer">
+                <div class="aux-border-shape-none ">
+                                </div>
+            </div>
+        
+</section><!-- widget-container -->		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-5cd7abe aux-appear-watch-animation aux-fade-in-right-1" data-id="5cd7abe" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-bfb52a6 elementor-widget elementor-widget-aux_text" data-id="bfb52a6" data-element_type="widget" data-widget_type="aux_text.default">
+				<div class="elementor-widget-container">
+			<section class="widget-container aux-widget-text aux-parent-aubaf90b09">        <div class="aux-widget-advanced-text aux-wrap-style-simple aux-ico-pos-top aux-text-center aux-text-resp- aux-text-color-dark aux-text-widget-bg-center aux-text-no-content ">
+        
+                            <div class="aux-text-widget-header ">
+                        <div class="aux-ico-box aux-ico-large aux-ico-shape-circle aux-ico-clear ">
+                                                            <span class="aux-ico auxicon auxicon-database"> </span>
+                                                    </div>
+                </div>
+            
+            <div class="aux-text-inner aux-text-widget-content">
+                                <h4 class="col-title">Database Architecture</h4>
+                            </div>
+        </div>
+                    <div class="aux-text-widget-footer">
+                <div class="aux-border-shape-none ">
+                                </div>
+            </div>
+        
+</section><!-- widget-container -->		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-ada4049 aux-appear-watch-animation aux-fade-in-right-1" data-id="ada4049" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-52890e8 elementor-widget elementor-widget-aux_text" data-id="52890e8" data-element_type="widget" data-widget_type="aux_text.default">
+				<div class="elementor-widget-container">
+			<section class="widget-container aux-widget-text aux-parent-auc34c3663">        <div class="aux-widget-advanced-text aux-wrap-style-simple aux-ico-pos-top aux-text-center aux-text-resp- aux-text-color-dark aux-text-widget-bg-center aux-text-no-content ">
+        
+                            <div class="aux-text-widget-header ">
+                        <div class="aux-ico-box aux-ico-large aux-ico-shape-circle aux-ico-clear ">
+                                                            <span class="aux-ico fas fa-cloud"> </span>
+                                                    </div>
+                </div>
+            
+            <div class="aux-text-inner aux-text-widget-content">
+                                <h4 class="col-title">Cloud Deployment</h4>
+                            </div>
+        </div>
+                    <div class="aux-text-widget-footer">
+                <div class="aux-border-shape-none ">
+                                </div>
+            </div>
+        
+</section><!-- widget-container -->		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-979c265 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="979c265" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4c6f75c" data-id="4c6f75c" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-ba1e842 aux-appear-watch-animation aux-fade-in-up-2 elementor-widget elementor-widget-heading" data-id="ba1e842" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Frontend Architecture</h1>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-0735d8e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0735d8e" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-fa72548" data-id="fa72548" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-66b1367 elementor-widget elementor-widget-text-editor" data-id="66b1367" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<ul>
+<li><strong>Component Based Architecture</strong></li>
+<li><strong>Just in Time Rendering</strong></li>
+<li><strong>Scalable Components</strong></li>
+<li><strong>SSR</strong></li>
+<li><strong>SPA/PWA/Electrons</strong></li>
+<li><strong>Micro Frontend Architecture</strong></li>
+<li><strong>Ngnix</strong></li>
+<li><strong>Cloud Based Frontend Architecture</strong></li>
+</ul>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-0c5c61f" data-id="0c5c61f" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-9a9593a elementor-widget elementor-widget-image" data-id="9a9593a" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="1024" height="683" src="./../../wp-content/uploads/2023/04/3099563.jpg" class="attachment-large size-large wp-image-723" alt="">														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b5cb87a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b5cb87a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a24f4b3" data-id="a24f4b3" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-3e0d0ce aux-appear-watch-animation aux-slide-from-left elementor-widget elementor-widget-heading" data-id="3e0d0ce" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Frontend Technology Stack</h2>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-acacec8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="acacec8" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3380d10" data-id="3380d10" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-3b755a0 gallery-spacing-custom aux-appear-watch-animation aux-zoom-in-1 elementor-widget elementor-widget-image-gallery" data-id="3b755a0" data-element_type="widget" data-widget_type="image-gallery.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-gallery">
+			<div id="gallery-1" class="gallery galleryid-664 gallery-columns-4 gallery-size-thumbnail">
+<figure class="gallery-item">
+			<div class="gallery-icon portrait">
+				<img width="142" height="150" src="./../../wp-content/uploads/2023/04/angular.png" class="attachment-thumbnail size-thumbnail" alt="" decoding="async">
+			</div></figure><figure class="gallery-item">
+			<div class="gallery-icon landscape">
+				<img width="150" height="134" src="./../../wp-content/uploads/2023/04/React-1.png" class="attachment-thumbnail size-thumbnail" alt="" decoding="async">
+			</div></figure><figure class="gallery-item">
+			<div class="gallery-icon landscape">
+				<img width="150" height="135" src="./../../wp-content/uploads/2023/04/nextjs.png" class="attachment-thumbnail size-thumbnail" alt="" decoding="async">
+			</div></figure><figure class="gallery-item">
+			<div class="gallery-icon landscape">
+				<img width="150" height="150" src="./../../wp-content/uploads/2023/04/javascript-vector-png-javascript-vector-logo-600.png" class="attachment-thumbnail size-thumbnail" alt="" decoding="async">
+			</div></figure>
+		</div>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-892609e elementor-section-full_width aux-appear-watch-animation aux-mask-from-left elementor-section-height-default elementor-section-height-default" data-id="892609e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a86158f aux-appear-watch-animation aux-fade-in-up-1" data-id="a86158f" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-dd03e20 aux-appear-watch-animation aux-fade-in-up-1 elementor-widget elementor-widget-aux_modern_heading" data-id="dd03e20" data-element_type="widget" data-widget_type="aux_modern_heading.default">
+				<div class="elementor-widget-container">
+			<section class="aux-widget-modern-heading">
+            <div class="aux-widget-inner"><h2 class="aux-modern-heading-primary">Backend Architecture
+</h2></div>
+        </section>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-2742b60 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2742b60" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9a76cd1" data-id="9a76cd1" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-bd3dd39 elementor-widget elementor-widget-heading" data-id="bd3dd39" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Our team is dedicated to design a cost effective scalable and secure backend services understanding your business requirements.</h2>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-787369b aux-appear-watch-animation aux-fade-in-up-1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="787369b" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-07c2458" data-id="07c2458" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-30481b6 elementor-widget elementor-widget-aux_text" data-id="30481b6" data-element_type="widget" data-widget_type="aux_text.default">
+				<div class="elementor-widget-container">
+			<section class="widget-container aux-widget-text aux-parent-au3f95dacb">        <div class="aux-widget-advanced-text aux-wrap-style-simple aux-ico-pos-left aux-text-left aux-text-resp- aux-text-color-dark aux-text-widget-bg-center  aux-text-padding-fix ">
+        
+                            <div class="aux-text-widget-header ">
+                        <div class="aux-ico-box aux-ico-large aux-ico-shape-circle aux-ico-clear ">
+                                                            <span class="aux-ico fas fa-coins"> </span>
+                                                    </div>
+                </div>
+            
+            <div class="aux-text-inner aux-text-widget-content">
+                                <h4 class="col-title">Microservices (Queues)</h4>
+                                <div class="widget-content">
+                                        <h5>RabbitMQ, AWS SQS (when your business logic is too complex to have a monolithic application).</h5>                </div>
+                            </div>
+        </div>
+                    <div class="aux-text-widget-footer">
+                <div class="aux-border-shape-none ">
+                                </div>
+            </div>
+        
+</section><!-- widget-container -->		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-efaeba0" data-id="efaeba0" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-8ba90bb elementor-widget elementor-widget-aux_text" data-id="8ba90bb" data-element_type="widget" data-widget_type="aux_text.default">
+				<div class="elementor-widget-container">
+			<section class="widget-container aux-widget-text aux-parent-au1fa27fbf">        <div class="aux-widget-advanced-text aux-wrap-style-simple aux-ico-pos-left aux-text-left aux-text-resp- aux-text-color-dark aux-text-widget-bg-center  aux-text-padding-fix ">
+        
+                            <div class="aux-text-widget-header ">
+                        <div class="aux-ico-box aux-ico-large aux-ico-shape-circle aux-ico-clear ">
+                                                            <span class="aux-ico auxicon auxicon-settings-8"> </span>
+                                                    </div>
+                </div>
+            
+            <div class="aux-text-inner aux-text-widget-content">
+                                <h4 class="col-title">Serverless</h4>
+                                <div class="widget-content">
+                                        <h5>AWS Lambda, CloudFlare Workers  – when you are looking for a lightweight and low cost solution.</h5>                </div>
+                            </div>
+        </div>
+                    <div class="aux-text-widget-footer">
+                <div class="aux-border-shape-none ">
+                                </div>
+            </div>
+        
+</section><!-- widget-container -->		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-3a8ea14" data-id="3a8ea14" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-ca01447 elementor-widget elementor-widget-aux_text" data-id="ca01447" data-element_type="widget" data-widget_type="aux_text.default">
+				<div class="elementor-widget-container">
+			<section class="widget-container aux-widget-text aux-parent-au4354ddb2">        <div class="aux-widget-advanced-text aux-wrap-style-simple aux-ico-pos-left aux-text-left aux-text-resp- aux-text-color-dark aux-text-widget-bg-center  aux-text-padding-fix ">
+        
+                            <div class="aux-text-widget-header ">
+                        <div class="aux-ico-box aux-ico-large aux-ico-shape-circle aux-ico-clear ">
+                                                            <span class="aux-ico fas fa-chalkboard-teacher"> </span>
+                                                    </div>
+                </div>
+            
+            <div class="aux-text-inner aux-text-widget-content">
+                                <h4 class="col-title">Classical</h4>
+                                <div class="widget-content">
+                                        <p><strong>Technologies like Express JS, Go, .NET and other modern frameworks are used to design secured apis</strong></p>                </div>
+                            </div>
+        </div>
+                    <div class="aux-text-widget-footer">
+                <div class="aux-border-shape-none ">
+                                </div>
+            </div>
+        
+</section><!-- widget-container -->		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-ca751ca elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ca751ca" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-97780bf" data-id="97780bf" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-5db372c aux-appear-watch-animation aux-zoom-in-1 elementor-widget elementor-widget-image" data-id="5db372c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="1024" height="1024" src="./../../wp-content/uploads/2023/04/20943473.jpg" class="attachment-large size-large wp-image-776" alt="">														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-4c698c4" data-id="4c698c4" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-ee9423f elementor-widget elementor-widget-heading" data-id="ee9423f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Microservices Tech</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2dd11ea gallery-spacing-custom aux-appear-watch-animation aux-slide-from-right elementor-widget elementor-widget-image-gallery" data-id="2dd11ea" data-element_type="widget" data-widget_type="image-gallery.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-gallery">
+			<div id="gallery-2" class="gallery galleryid-664 gallery-columns-2 gallery-size-thumbnail">
+<figure class="gallery-item">
+			<div class="gallery-icon portrait">
+				<img width="124" height="150" src="./../../wp-content/uploads/2023/04/aws-sqs-logo-png-transparent.png" class="attachment-thumbnail size-thumbnail" alt="" decoding="async" aria-describedby="gallery-2-783">
+			</div>
+				<figcaption class="wp-caption-text gallery-caption" id="gallery-2-783">
+				AWS SQS
+				</figcaption></figure><figure class="gallery-item">
+			<div class="gallery-icon landscape">
+				<img width="150" height="150" src="./../../wp-content/uploads/2023/04/OIP.jpeg" class="attachment-thumbnail size-thumbnail" alt="" decoding="async" aria-describedby="gallery-2-784">
+			</div>
+				<figcaption class="wp-caption-text gallery-caption" id="gallery-2-784">
+				Rabit MQ
+				</figcaption></figure><figure class="gallery-item">
+			<div class="gallery-icon portrait">
+				<img width="92" height="150" src="./../../wp-content/uploads/2023/04/kafka-logo-4.png" class="attachment-thumbnail size-thumbnail" alt="" decoding="async" aria-describedby="gallery-2-785">
+			</div>
+				<figcaption class="wp-caption-text gallery-caption" id="gallery-2-785">
+				Kafka
+				</figcaption></figure>
+		</div>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-c9752e2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c9752e2" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-25cc874" data-id="25cc874" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-17ab637 aux-appear-watch-animation aux-slide-from-left elementor-widget elementor-widget-heading" data-id="17ab637" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Classical Tech</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-b631c5c gallery-spacing-custom aux-appear-watch-animation aux-slide-from-left elementor-widget elementor-widget-image-gallery" data-id="b631c5c" data-element_type="widget" data-widget_type="image-gallery.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-gallery">
+			<div id="gallery-3" class="gallery galleryid-664 gallery-columns-2 gallery-size-thumbnail">
+<figure class="gallery-item">
+			<div class="gallery-icon landscape">
+				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="b631c5c" data-elementor-lightbox-title="R" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NzkyLCJ1cmwiOiJodHRwOlwvXC9sb2NhbGhvc3RcL0hlYXBtYWRlXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8wNFwvUi0xLnBuZyIsInNsaWRlc2hvdyI6ImI2MzFjNWMifQ%3D%3D" href="./../../wp-content/uploads/2023/04/R-1.png"><img width="150" height="150" src="./../../wp-content/uploads/2023/04/R-1.png" class="attachment-thumbnail size-thumbnail" alt="" decoding="async"></a>
+			</div></figure><figure class="gallery-item">
+			<div class="gallery-icon landscape">
+				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="b631c5c" data-elementor-lightbox-title="Go_(programming_language)-Logo.wine" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NzkwLCJ1cmwiOiJodHRwOlwvXC9sb2NhbGhvc3RcL0hlYXBtYWRlXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8wNFwvR29fcHJvZ3JhbW1pbmdfbGFuZ3VhZ2UtTG9nby53aW5lXy5wbmciLCJzbGlkZXNob3ciOiJiNjMxYzVjIn0%3D" href="./../../wp-content/uploads/2023/04/Go_programming_language-Logo.wine_.png"><img width="150" height="100" src="./../../wp-content/uploads/2023/04/Go_programming_language-Logo.wine_.png" class="attachment-thumbnail size-thumbnail" alt="" decoding="async"></a>
+			</div></figure><figure class="gallery-item">
+			<div class="gallery-icon landscape">
+				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="b631c5c" data-elementor-lightbox-title="logo-express" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6Nzg5LCJ1cmwiOiJodHRwOlwvXC9sb2NhbGhvc3RcL0hlYXBtYWRlXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8wNFwvbG9nby1leHByZXNzLnBuZyIsInNsaWRlc2hvdyI6ImI2MzFjNWMifQ%3D%3D" href="./../../wp-content/uploads/2023/04/logo-express.png"><img width="150" height="150" src="./../../wp-content/uploads/2023/04/logo-express.png" class="attachment-thumbnail size-thumbnail" alt="" decoding="async"></a>
+			</div></figure><figure class="gallery-item">
+			<div class="gallery-icon landscape">
+				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="b631c5c" data-elementor-lightbox-title="500px-Node.js_logo" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NzkxLCJ1cmwiOiJodHRwOlwvXC9sb2NhbGhvc3RcL0hlYXBtYWRlXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8wNFwvNTAwcHgtTm9kZS5qc19sb2dvLnBuZyIsInNsaWRlc2hvdyI6ImI2MzFjNWMifQ%3D%3D" href="./../../wp-content/uploads/2023/04/500px-Node.js_logo.png"><img width="150" height="150" src="./../../wp-content/uploads/2023/04/500px-Node.js_logo.png" class="attachment-thumbnail size-thumbnail" alt="" decoding="async"></a>
+			</div></figure>
+		</div>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-772fd51" data-id="772fd51" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-dac9cc6 aux-appear-watch-animation aux-zoom-in-1 elementor-widget elementor-widget-image" data-id="dac9cc6" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="1024" height="683" src="./../../wp-content/uploads/2023/04/7063891.jpg" class="attachment-large size-large wp-image-777" alt="">														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-ad299d3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ad299d3" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-e04ff55" data-id="e04ff55" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-0a49528 aux-appear-watch-animation aux-zoom-in-1 elementor-widget elementor-widget-image" data-id="0a49528" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="1024" height="1024" src="./../../wp-content/uploads/2023/04/6481227.jpg" class="attachment-large size-large wp-image-778" alt="">														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-f43d583" data-id="f43d583" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-4415657 aux-appear-watch-animation aux-slide-from-right elementor-widget elementor-widget-heading" data-id="4415657" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Serverless Tech</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-b29c1ff gallery-spacing-custom elementor-widget elementor-widget-image-gallery" data-id="b29c1ff" data-element_type="widget" data-widget_type="image-gallery.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-gallery">
+			<div id="gallery-4" class="gallery galleryid-664 gallery-columns-2 gallery-size-thumbnail">
+<figure class="gallery-item">
+			<div class="gallery-icon landscape">
+				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="b29c1ff" data-elementor-lightbox-title="azure-functions" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6Nzk2LCJ1cmwiOiJodHRwOlwvXC9sb2NhbGhvc3RcL0hlYXBtYWRlXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8wNFwvYXp1cmUtZnVuY3Rpb25zLnBuZyIsInNsaWRlc2hvdyI6ImIyOWMxZmYifQ%3D%3D" href="./../../wp-content/uploads/2023/04/azure-functions.png"><img width="150" height="139" src="./../../wp-content/uploads/2023/04/azure-functions.png" class="attachment-thumbnail size-thumbnail" alt="" decoding="async" aria-describedby="gallery-4-796"></a>
+			</div>
+				<figcaption class="wp-caption-text gallery-caption" id="gallery-4-796">
+				Azure Functions
+				</figcaption></figure><figure class="gallery-item">
+			<div class="gallery-icon landscape">
+				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="b29c1ff" data-elementor-lightbox-title="Cloudflare-Logo" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6Nzk4LCJ1cmwiOiJodHRwOlwvXC9sb2NhbGhvc3RcL0hlYXBtYWRlXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8wNFwvQ2xvdWRmbGFyZS1Mb2dvLnBuZyIsInNsaWRlc2hvdyI6ImIyOWMxZmYifQ%3D%3D" href="./../../wp-content/uploads/2023/04/Cloudflare-Logo.png"><img width="150" height="85" src="./../../wp-content/uploads/2023/04/Cloudflare-Logo.png" class="attachment-thumbnail size-thumbnail" alt="" decoding="async" aria-describedby="gallery-4-798"></a>
+			</div>
+				<figcaption class="wp-caption-text gallery-caption" id="gallery-4-798">
+				Cloud Flare
+				</figcaption></figure><figure class="gallery-item">
+			<div class="gallery-icon portrait">
+				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="b29c1ff" data-elementor-lightbox-title="nodejs-icon-logo-png-transparent" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6Nzk5LCJ1cmwiOiJodHRwOlwvXC9sb2NhbGhvc3RcL0hlYXBtYWRlXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8wNFwvbm9kZWpzLWljb24tbG9nby1wbmctdHJhbnNwYXJlbnQucG5nIiwic2xpZGVzaG93IjoiYjI5YzFmZiJ9" href="./../../wp-content/uploads/2023/04/nodejs-icon-logo-png-transparent.png"><img width="136" height="150" src="./../../wp-content/uploads/2023/04/nodejs-icon-logo-png-transparent.png" class="attachment-thumbnail size-thumbnail" alt="" decoding="async" aria-describedby="gallery-4-799"></a>
+			</div>
+				<figcaption class="wp-caption-text gallery-caption" id="gallery-4-799">
+				Node Js
+				</figcaption></figure><figure class="gallery-item">
+			<div class="gallery-icon portrait">
+				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="b29c1ff" data-elementor-lightbox-title="aws-lambda-356x364" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6ODAyLCJ1cmwiOiJodHRwOlwvXC9sb2NhbGhvc3RcL0hlYXBtYWRlXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8wNFwvYXdzLWxhbWJkYS0zNTZ4MzY0LTEucG5nIiwic2xpZGVzaG93IjoiYjI5YzFmZiJ9" href="./../../wp-content/uploads/2023/04/aws-lambda-356x364-1.png"><img width="147" height="150" src="./../../wp-content/uploads/2023/04/aws-lambda-356x364-1.png" class="attachment-thumbnail size-thumbnail" alt="" decoding="async" aria-describedby="gallery-4-802"></a>
+			</div>
+				<figcaption class="wp-caption-text gallery-caption" id="gallery-4-802">
+				Aws Lambda
+				</figcaption></figure>
+		</div>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-2ec7dc7 elementor-section-full_width aux-appear-watch-animation aux-mask-from-left elementor-section-height-default elementor-section-height-default" data-id="2ec7dc7" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f8295e1 aux-appear-watch-animation aux-fade-in-up-1" data-id="f8295e1" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-0a0043b aux-appear-watch-animation aux-fade-in-up-1 elementor-widget elementor-widget-aux_modern_heading" data-id="0a0043b" data-element_type="widget" data-widget_type="aux_modern_heading.default">
+				<div class="elementor-widget-container">
+			<section class="aux-widget-modern-heading">
+            <div class="aux-widget-inner"><h2 class="aux-modern-heading-primary">Database Architecture
+</h2></div>
+        </section>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-2ed3ca9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2ed3ca9" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-03aed1e" data-id="03aed1e" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-982e415 elementor-widget elementor-widget-image" data-id="982e415" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="1024" height="1024" src="./../../wp-content/uploads/2023/04/3661724.jpg" class="attachment-large size-large wp-image-811" alt="">														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b3db38d" data-id="b3db38d" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-f7a81da elementor-widget elementor-widget-aux_text" data-id="f7a81da" data-element_type="widget" data-widget_type="aux_text.default">
+				<div class="elementor-widget-container">
+			<section class="widget-container aux-widget-text aux-parent-au4e297c37">        <div class="aux-widget-advanced-text aux-wrap-style-simple aux-ico-pos-right aux-text-left aux-text-resp- aux-text-color-dark aux-text-widget-bg-center  aux-text-padding-fix ">
+        
+                            <div class="aux-text-widget-header ">
+                        <div class="aux-ico-box aux-ico-large aux-ico-shape-circle aux-ico-clear ">
+                                                            <span class="aux-ico auxicon auxicon-database-streamline"> </span>
+                                                    </div>
+                </div>
+            
+            <div class="aux-text-inner aux-text-widget-content">
+                                <h4 class="col-title">Database Design</h4>
+                                <div class="widget-content">
+                                        <h5>Hepmade has expertise on a wide range of database architectures. We suggest our client the best database depending upon their business requirements.</h5>                </div>
+                            </div>
+        </div>
+                    <div class="aux-text-widget-footer">
+                <div class="aux-border-shape-none ">
+                                </div>
+            </div>
+        
+</section><!-- widget-container -->		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-fdd3871" data-id="fdd3871" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-88fe4a9 elementor-widget elementor-widget-image" data-id="88fe4a9" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="1024" height="1024" src="./../../wp-content/uploads/2023/04/6533310.jpg" class="attachment-large size-large wp-image-815" alt="">														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-ed3596d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ed3596d" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-1821cb4" data-id="1821cb4" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-a656d33 aux-appear-watch-animation aux-fade-in-left elementor-widget elementor-widget-heading" data-id="a656d33" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Relational Database</h2>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-e04e5f7" data-id="e04e5f7" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-51ca348 elementor-widget elementor-widget-text-editor" data-id="51ca348" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<h5>When your data is highly structured and has a lot of relations.</h5>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-90dad7a aux-appear-watch-animation aux-fade-in-up elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="90dad7a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-bc6ed41" data-id="bc6ed41" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-92316b2 elementor-widget elementor-widget-image" data-id="92316b2" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="922" height="1024" src="./../../wp-content/uploads/2023/04/postgresql-logo1.png" class="attachment-large size-large wp-image-820" alt="">														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-e592f7a" data-id="e592f7a" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-b058b03 elementor-widget elementor-widget-image" data-id="b058b03" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="1024" height="1024" src="./../../wp-content/uploads/2023/04/mysql-5-logo-png-transparent.png" class="attachment-large size-large wp-image-822" alt="">														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-a4a0588" data-id="a4a0588" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-a13a2dd elementor-widget elementor-widget-image" data-id="a13a2dd" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="1024" height="532" src="./../../wp-content/uploads/2023/04/logo-microsoft-sql-server-595x3350-1.jpg" class="attachment-large size-large wp-image-821" alt="">														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-bbebb42" data-id="bbebb42" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-184a2c3 elementor-widget elementor-widget-image" data-id="184a2c3" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="1024" height="559" src="./../../wp-content/uploads/2023/04/oracle-logo.png" class="attachment-large size-large wp-image-823" alt="">														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-db983fd elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="db983fd" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-f0cd041" data-id="f0cd041" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-b47ce13 aux-appear-watch-animation aux-fade-in-left elementor-widget elementor-widget-heading" data-id="b47ce13" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Non Sql Database</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-9d933bb aux-appear-watch-animation aux-zoom-in elementor-widget elementor-widget-image" data-id="9d933bb" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="1024" height="1024" src="./../../wp-content/uploads/2023/04/Wavy_Bus-19_Single-05.jpg" class="attachment-large size-large wp-image-826" alt="">														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-bb300ff" data-id="bb300ff" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-8f92fd0 elementor-widget elementor-widget-text-editor" data-id="8f92fd0" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+									</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-eca2490 elementor-widget elementor-widget-text-editor" data-id="eca2490" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<h5>When your data is semi-structured or unstructured and you don’t want to have too many relations.</h5>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-6bb1caf elementor-widget elementor-widget-image" data-id="6bb1caf" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="500" height="500" src="./../../wp-content/uploads/2023/04/MongoDB-sm-logo.gif" class="attachment-large size-large wp-image-825" alt="">														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-5f72d54 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5f72d54" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-6ae832b" data-id="6ae832b" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-8542256 aux-appear-watch-animation aux-fade-in-left elementor-widget elementor-widget-heading" data-id="8542256" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Graph Database</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-e0481cf elementor-widget elementor-widget-image" data-id="e0481cf" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="1024" height="1024" src="./../../wp-content/uploads/2023/04/2011.i039.006.big-data-science-analysis-isometric-set.jpg" class="attachment-large size-large wp-image-831" alt="">														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-c2d1745" data-id="c2d1745" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-32c4e0e elementor-widget elementor-widget-text-editor" data-id="32c4e0e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<h5>When you have highly interconnected data, and for situations where the content of the data itself matters less than the overall structure.</h5>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-c3ddb4b elementor-widget elementor-widget-image" data-id="c3ddb4b" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="1024" height="534" src="./../../wp-content/uploads/2023/04/neo4j_logo.png" class="attachment-large size-large wp-image-833" alt="">														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4e9bcd0 aux-appear-watch-animation aux-fade-in-up-1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4e9bcd0" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-71d7674" data-id="71d7674" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-154b048 elementor-widget elementor-widget-aux_modern_heading" data-id="154b048" data-element_type="widget" data-widget_type="aux_modern_heading.default">
+				<div class="elementor-widget-container">
+			<section class="aux-widget-modern-heading">
+            <div class="aux-widget-inner">
+<h1 class="aux-modern-heading-primary">UI/UX</h1>
+<h3 class="aux-modern-heading-secondary">
+<span class="aux-head-before">Hepmade believes in </span><span class="aux-head-highlight">Aesthetic</span><span class="aux-head-after">  first</span>
+</h3>
+<div class="aux-modern-heading-divider"></div>
+<div class="aux-modern-heading-description"><p>Through human-centered design and the latest UX methodologies, we offer a range of UX design services, from user research to high-fidelity prototyping and data visualization</p></div>
+</div>
+        </section>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-e1bea50 aux-appear-watch-animation aux-zoom-in-2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e1bea50" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-69e13f7" data-id="69e13f7" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-5fdd557 elementor-widget elementor-widget-image" data-id="5fdd557" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="1024" height="1024" src="./../../wp-content/uploads/2023/04/4619097.jpg" class="attachment-large size-large wp-image-841" alt="">														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3f439de elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3f439de" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-6626712" data-id="6626712" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-f0a7dc7 elementor-widget elementor-widget-aux_text" data-id="f0a7dc7" data-element_type="widget" data-widget_type="aux_text.default">
+				<div class="elementor-widget-container">
+			<section class="widget-container aux-widget-text aux-parent-au991efe02">        <div class="aux-widget-advanced-text aux-wrap-style-simple aux-ico-pos-left aux-text-left aux-text-resp- aux-text-color-dark aux-text-widget-bg-center aux-text-no-content aux-text-padding-fix ">
+        
+                            <div class="aux-text-widget-header ">
+                        <div class="aux-ico-box aux-ico-large aux-ico-shape-circle aux-ico-clear ">
+                                                            <span class="aux-ico fas fa-user-cog"> </span>
+                                                    </div>
+                </div>
+            
+            <div class="aux-text-inner aux-text-widget-content">
+                                <h4 class="col-title">User Research</h4>
+                            </div>
+        </div>
+                    <div class="aux-text-widget-footer">
+                <div class="aux-border-shape-none ">
+                                </div>
+            </div>
+        
+</section><!-- widget-container -->		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-0f73912" data-id="0f73912" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-01d0a6b elementor-widget elementor-widget-aux_text" data-id="01d0a6b" data-element_type="widget" data-widget_type="aux_text.default">
+				<div class="elementor-widget-container">
+			<section class="widget-container aux-widget-text aux-parent-au78f6d8d4">        <div class="aux-widget-advanced-text aux-wrap-style-simple aux-ico-pos-left aux-text-left aux-text-resp- aux-text-color-dark aux-text-widget-bg-center aux-text-no-content aux-text-padding-fix ">
+        
+                            <div class="aux-text-widget-header ">
+                        <div class="aux-ico-box aux-ico-large aux-ico-shape-circle aux-ico-clear ">
+                                                            <span class="aux-ico far fa-edit"> </span>
+                                                    </div>
+                </div>
+            
+            <div class="aux-text-inner aux-text-widget-content">
+                                <h4 class="col-title">Prototyping</h4>
+                            </div>
+        </div>
+                    <div class="aux-text-widget-footer">
+                <div class="aux-border-shape-none ">
+                                </div>
+            </div>
+        
+</section><!-- widget-container -->		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-05fbfa2" data-id="05fbfa2" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-d8a0c4b elementor-widget elementor-widget-aux_text" data-id="d8a0c4b" data-element_type="widget" data-widget_type="aux_text.default">
+				<div class="elementor-widget-container">
+			<section class="widget-container aux-widget-text aux-parent-auf066fd64">        <div class="aux-widget-advanced-text aux-wrap-style-simple aux-ico-pos-left aux-text-left aux-text-resp- aux-text-color-dark aux-text-widget-bg-center aux-text-no-content aux-text-padding-fix ">
+        
+                            <div class="aux-text-widget-header ">
+                        <div class="aux-ico-box aux-ico-large aux-ico-shape-circle aux-ico-clear ">
+                                                            <span class="aux-ico fab fa-sketch"> </span>
+                                                    </div>
+                </div>
+            
+            <div class="aux-text-inner aux-text-widget-content">
+                                <h4 class="col-title">Sketch</h4>
+                            </div>
+        </div>
+                    <div class="aux-text-widget-footer">
+                <div class="aux-border-shape-none ">
+                                </div>
+            </div>
+        
+</section><!-- widget-container -->		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-4944ca5" data-id="4944ca5" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-52f587e elementor-widget elementor-widget-aux_text" data-id="52f587e" data-element_type="widget" data-widget_type="aux_text.default">
+				<div class="elementor-widget-container">
+			<section class="widget-container aux-widget-text aux-parent-au3c58321c">        <div class="aux-widget-advanced-text aux-wrap-style-simple aux-ico-pos-left aux-text-left aux-text-resp- aux-text-color-dark aux-text-widget-bg-center aux-text-no-content aux-text-padding-fix ">
+        
+                            <div class="aux-text-widget-header ">
+                        <div class="aux-ico-box aux-ico-large aux-ico-shape-circle aux-ico-clear ">
+                                                            <span class="aux-ico fab fa-figma"> </span>
+                                                    </div>
+                </div>
+            
+            <div class="aux-text-inner aux-text-widget-content">
+                                <h4 class="col-title">Figma</h4>
+                            </div>
+        </div>
+                    <div class="aux-text-widget-footer">
+                <div class="aux-border-shape-none ">
+                                </div>
+            </div>
+        
+</section><!-- widget-container -->		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3f372cc elementor-section-full_width aux-appear-watch-animation aux-mask-from-left elementor-section-height-default elementor-section-height-default" data-id="3f372cc" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fe9b8f2 aux-appear-watch-animation aux-fade-in-up-1" data-id="fe9b8f2" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-48df391 aux-appear-watch-animation aux-fade-in-up-1 elementor-widget elementor-widget-aux_modern_heading" data-id="48df391" data-element_type="widget" data-widget_type="aux_modern_heading.default">
+				<div class="elementor-widget-container">
+			<section class="aux-widget-modern-heading">
+            <div class="aux-widget-inner"><h2 class="aux-modern-heading-primary">Cloud Deployment</h2></div>
+        </section>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-e23dc8a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e23dc8a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a82f16f" data-id="a82f16f" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-fd3aa26 elementor-widget elementor-widget-text-editor" data-id="fd3aa26" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Our technical team has expertise to deploy complex software in scalable and cost effective manner. We do cloud hosting as well as on premise deployment. We rely on Kubernetes &#8211; the most trusted orchestration engine so that your application can take any load and perform efficiently.</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-fdfab18 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fdfab18" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b457dff" data-id="b457dff" data-element_type="column">
+			<div class="elementor-column-wrap">
+							<div class="elementor-widget-wrap">
+								</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-96ae63c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="96ae63c" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-766439b" data-id="766439b" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-b776440 aux-appear-watch-animation aux-fade-in-up-1 elementor-widget elementor-widget-heading" data-id="b776440" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Technology Stack</h2>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-807a29a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="807a29a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-107126d" data-id="107126d" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-1f3084e elementor-widget elementor-widget-image" data-id="1f3084e" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="1024" height="576" src="./../../wp-content/uploads/2023/04/Docker-Logo-2013-2015.png" class="attachment-large size-large wp-image-864" alt="">														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-c4da62c elementor-widget elementor-widget-image" data-id="c4da62c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="1024" height="1024" src="./../../wp-content/uploads/2023/04/GitHub_logo.png" class="attachment-large size-large wp-image-859" alt="">														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-081b0f5" data-id="081b0f5" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-f52c9ba elementor-widget elementor-widget-image" data-id="f52c9ba" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="474" height="419" src="./../../wp-content/uploads/2023/04/OIP-2.jpeg" class="attachment-large size-large wp-image-865" alt="">														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-c99be04 elementor-widget elementor-widget-image" data-id="c99be04" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="1024" height="613" src="./../../wp-content/uploads/2023/04/R-3.png" class="attachment-large size-large wp-image-867" alt="">														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-503b3dc" data-id="503b3dc" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-ce58b5a elementor-widget elementor-widget-image" data-id="ce58b5a" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="629" height="1024" src="./../../wp-content/uploads/2023/04/jenkins-1-logo-png-transparent.png" class="attachment-large size-large wp-image-866" alt="">														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-7f8f3de" data-id="7f8f3de" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-45e2f7f elementor-widget elementor-widget-image" data-id="45e2f7f" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="1024" height="1024" src="./../../wp-content/uploads/2023/04/azure-1.jpg" class="attachment-large size-large wp-image-868" alt="">														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-d86a37d elementor-widget elementor-widget-image" data-id="d86a37d" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="1024" height="576" src="./../../wp-content/uploads/2023/04/Google-Cloud-Symbol-1.png" class="attachment-large size-large wp-image-869" alt="">														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-1b834dd elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1b834dd" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f7814de" data-id="f7814de" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-3da5828 aux-appear-watch-animation aux-fade-in-up-2 elementor-widget elementor-widget-heading" data-id="3da5828" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Security</h1>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-e55f845 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e55f845" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-317fd9d" data-id="317fd9d" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-1ad55fa elementor-widget elementor-widget-aux_text" data-id="1ad55fa" data-element_type="widget" data-widget_type="aux_text.default">
+				<div class="elementor-widget-container">
+			<section class="widget-container aux-widget-text aux-parent-au9344aa5a">        <div class="aux-widget-advanced-text aux-wrap-style-simple aux-ico-pos-left aux-text-left aux-text-resp- aux-text-color-dark aux-text-widget-bg-center  aux-text-padding-fix ">
+        
+                            <div class="aux-text-widget-header ">
+                        <div class="aux-ico-box aux-ico-large aux-ico-shape-circle aux-ico-clear ">
+                                                            <span class="aux-ico fas fa-shield-alt"> </span>
+                                                    </div>
+                </div>
+            
+            <div class="aux-text-inner aux-text-widget-content">
+                                <h4 class="col-title">Security</h4>
+                                <div class="widget-content">
+                                        <p>Security is an important aspect other than scalability and agility of a software. When the question is about security Hepmade never keeps any stone unturned. We leverage modern cloud security solutions like Azure Vault and AWS Secure Storage. Our customs apis are well protected by Oauth 2 technology using JWT tokens so that you can operate your buisness without any security riskd.</p>                </div>
+                            </div>
+        </div>
+                    <div class="aux-text-widget-footer">
+                <div class="aux-border-shape-none ">
+                                </div>
+            </div>
+        
+</section><!-- widget-container -->		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4d56c7a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4d56c7a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-074c40b" data-id="074c40b" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-f5e3dee elementor-widget elementor-widget-image" data-id="f5e3dee" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="1024" height="1024" src="./../../wp-content/uploads/2023/04/20945597.jpg" class="attachment-large size-large wp-image-884" alt="">														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2f6d225" data-id="2f6d225" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-516149b aux-appear-watch-animation aux-fade-in-up-2 elementor-widget elementor-widget-heading" data-id="516149b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Security Technologies</h1>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-fc62276 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fc62276" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-d69ce95" data-id="d69ce95" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-afc0a21 elementor-widget elementor-widget-image" data-id="afc0a21" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="994" height="1024" src="./../../wp-content/uploads/2023/04/auth0-logo-vertical-color.jpg" class="attachment-large size-large wp-image-890" alt="">														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c49f067" data-id="c49f067" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-8a6f873 elementor-widget elementor-widget-image" data-id="8a6f873" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="1024" height="475" src="./../../wp-content/uploads/2023/04/OPENID_CONNECT_NEW-Logo.jpg" class="attachment-large size-large wp-image-888" alt="">														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-acb09d7 elementor-widget elementor-widget-image" data-id="acb09d7" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img decoding="async" width="788" height="231" src="./../../wp-content/uploads/2023/04/1_XkmnsJ6Joa6EDFVGUw0tfA.png" class="attachment-large size-large wp-image-889" alt="">														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+									</div>
+			</div>
+					</div>
+		<div class="clear"></div>
+                                </div> <!-- end article section -->
+
+                                <footer class="entry-meta">
+                                                                    </footer> <!-- end article footer -->
+
+                            </div>
+
+                        </article> <!-- end article -->
+
+
+                        
+                        <div class="clear"></div>
+
+                        
+                        <div class="clear"></div>
+
+                        
+
+<!-- You can start editing here. -->
+
+
+    
+
+
+
+                
+                    </div>
+<!-- end content -->
+                </div>
+<!-- end primary -->
+
+                
+            </div>
+<!-- end container -->
+        </div>
+<!-- end wrapper -->
+    </main><!-- end main -->
+
+    <footer class="aux-elementor-footer" itemscope="itemscope" itemtype="https://schema.org/WPFooter" role="contentinfo">
+        <div class="aux-wrapper">
+        		<div data-elementor-type="footer" data-elementor-id="267" class="elementor elementor-267">
+						<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-306004f elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="306004f" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-996ab11" data-id="996ab11" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-9ffbe11 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9ffbe11" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-2c8c715" data-id="2c8c715" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-92cdb90 elementor-widget elementor-widget-image" data-id="92cdb90" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+													<a href="#section1">
+							<img width="150" height="150" src="./../../wp-content/uploads/2020/03/Hepmade-Logo.png" class="attachment-thumbnail size-thumbnail wp-image-285" alt="">								</a>
+														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3deee08" data-id="3deee08" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-f496eb7 elementor-widget__width-initial elementor-widget elementor-widget-aux_menu_box" data-id="f496eb7" data-element_type="widget" data-widget_type="aux_menu_box.default">
+				<div class="elementor-widget-container">
+			<div class="aux-elementor-header-menu aux-nav-menu-element aux-nav-menu-element-f496eb7">
+<div class="aux-burger-box" data-target-panel="toggle-bar" data-target-content=".elementor-element-f496eb7 .aux-master-menu"><div class="aux-burger aux-regular-large"><span class="mid-line"></span></div></div>
+<!-- start master menu -->
+<nav id="master-menu-elementor-f496eb7" class="menu-header-menu-container">
+
+	<ul id="menu-header-menu-1" class="aux-master-menu aux-no-js aux-skin-classic aux-with-indicator aux-horizontal" data-type="horizontal" data-switch-type="toggle" data-switch-parent=".elementor-element-f496eb7 .aux-toggle-menu-bar" data-switch-width="1">
+		<!-- start single menu -->
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-361 aux-menu-depth-0 aux-menu-root-1 aux-menu-item">
+			<a href="#section3" class="aux-item-content">
+				<span class="aux-menu-label">About Us</span>
+			</a>
+		</li>
+		<!-- end single menu -->
+		<!-- start single menu -->
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-362 aux-menu-depth-0 aux-menu-root-2 aux-menu-item">
+			<a href="#section4" class="aux-item-content">
+				<span class="aux-menu-label">Services</span>
+			</a>
+		</li>
+		<!-- end single menu -->
+		<!-- start single menu -->
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-363 aux-menu-depth-0 aux-menu-root-3 aux-menu-item">
+			<a href="#projects" class="aux-item-content">
+				<span class="aux-menu-label">Projects</span>
+			</a>
+		</li>
+		<!-- end single menu -->
+
+		<!-- start submenu -->
+		<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-607 aux-menu-depth-0 aux-menu-root-4 aux-menu-item">
+			<a href="#" class="aux-item-content">
+				<span class="aux-menu-label">Tech</span>
+			</a>
+
+		<ul class="sub-menu aux-submenu">
+			<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-664 current_page_item menu-item-689 aux-menu-depth-1 aux-menu-item">
+				<a href="./index.html" class="aux-item-content">
+					<span class="aux-menu-label">Full Stack Web Development</span>
+				</a>
+			</li>
+		</ul>
+		</li>
+		<!-- end submenu -->
+		<!-- start single menu -->
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-364 aux-menu-depth-0 aux-menu-root-5 aux-menu-item">
+			<a href="#career" class="aux-item-content">
+				<span class="aux-menu-label">Careers</span>
+			</a>
+		</li>
+		<!-- end single menu -->
+	</ul>
+
+</nav>
+<!-- end master menu -->
+<div class="aux-toggle-menu-bar"></div>
+</div>
+<style>@media only screen and (min-width: 2px) { .elementor-element-f496eb7 .aux-burger-box { display: none } }</style>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-76c7d03" data-id="76c7d03" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-bba4cea elementor-widget__width-auto elementor-widget elementor-widget-aux_mailchimp" data-id="bba4cea" data-element_type="widget" data-widget_type="aux_mailchimp.default">
+				<div class="elementor-widget-container">
+			<script>(function() {
+	window.mc4wp = window.mc4wp || {
+		listeners: [],
+		forms: {
+			on: function(evt, cb) {
+				window.mc4wp.listeners.push(
+					{
+						event   : evt,
+						callback: cb
+					}
+				);
+			}
+		}
+	}
+})();</script><!-- Mailchimp for WordPress v4.9.1 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-69" method="post" data-id="69" data-name="aux-cleaning-submit">
+<div class="mc4wp-form-fields">
+<input type="email" name="EMAIL" class="aux-cleaning-mail-submit" placeholder="Email Address" required>
+<input class="aux-cleaning-submit-button" type="submit" value="Subscribe">
+</div>
+<label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></label><input type="hidden" name="_mc4wp_timestamp" value="1681735197"><input type="hidden" name="_mc4wp_form_id" value="69"><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1"><div class="mc4wp-response"></div>
+</form>
+<!-- / Mailchimp for WordPress Plugin -->		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-94684e8 elementor-widget elementor-widget-aux_divider" data-id="94684e8" data-element_type="widget" data-widget_type="aux_divider.default">
+				<div class="elementor-widget-container">
+			<hr class="aux-divider-center">		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-315ebe6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="315ebe6" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="aux-parallax-section elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f9272a0" data-id="f9272a0" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-36b6f79 elementor-widget elementor-widget-aux_copyright" data-id="36b6f79" data-element_type="widget" data-widget_type="aux_copyright.default">
+				<div class="elementor-widget-container">
+			<small>&copy; 2023 Hepmade. All rights reserved.</small>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="aux-parallax-section elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-8656ea5" data-id="8656ea5" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-7737088 e-grid-align-right e-grid-align-mobile-center elementor-widget-mobile__width-inherit e-grid-align-tablet-left elementor-widget-tablet__width-auto elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="7737088" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-3c0ded7" target="_blank">
+						<span class="elementor-screen-only">Instagram</span>
+						<i class="fab fa-instagram"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin-in elementor-repeater-item-47f1b6b" target="_blank">
+						<span class="elementor-screen-only">Linkedin-in</span>
+						<i class="fab fa-linkedin-in"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-repeater-item-f128553" target="_blank">
+						<span class="elementor-screen-only">Facebook-f</span>
+						<i class="fab fa-facebook-f"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-d96d9a1" target="_blank">
+						<span class="elementor-screen-only">Twitter</span>
+						<i class="fab fa-twitter"></i>					</a>
+				</span>
+					</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+									</div>
+			</div>
+					</div>
+		        </div>
+<!-- end of wrapper -->
+    </footer><!-- end footer -->
+
+</div>
+<!--! end of #inner-body -->
+
+    <div class="aux-hidden-blocks">
+
+        <section id="offmenu" class="aux-offcanvas-menu aux-pin-left">
+            <div class="aux-panel-close">
+                <div class="aux-close aux-cross-symbol aux-thick-medium"></div>
+            </div>
+            <div class="offcanvas-header">
+            </div>
+            <div class="offcanvas-content">
+            </div>
+            <div class="offcanvas-footer">
+            </div>
+        </section>
+        <!-- offcanvas section -->
+
+        <section id="offcart" class="aux-offcanvas-menu aux-offcanvas-cart aux-pin-left">
+            <div class="aux-panel-close">
+                <div class="aux-close aux-cross-symbol aux-thick-medium"></div>
+            </div>
+            <div class="offcanvas-header">
+                Shopping Basket            </div>
+            <div class="aux-cart-wrapper aux-elegant-cart aux-offcart-content">
+            </div>
+        </section>
+        <!-- cartcanvas section -->
+
+                <section id="fs-menu-search" class="aux-fs-popup  aux-fs-menu-layout-left aux-indicator">
+            <div class="aux-panel-close">
+                <div class="aux-close aux-cross-symbol aux-thick-medium"></div>
+            </div>
+            <div class="aux-fs-menu">
+                        </div>
+            <div class="aux-fs-search">
+                <div class="aux-search-section ">
+                <div class="aux-search-form ">
+            <form action="http://localhost/Heapmade/" method="get">
+            <div class="aux-search-input-form">
+                            <input type="text" class="aux-search-field" placeholder="Type here.." name="s" autocomplete="off">
+                                    </div>
+                            <input type="submit" class="aux-black aux-search-submit aux-uppercase" value="Search">
+                        </form>
+        </div>
+<!-- end searchform -->
+                </div>
+
+            </div>
+        </section>
+        <!-- fullscreen search and menu -->
+                <section id="fs-search" class="aux-fs-popup aux-search-overlay  has-ajax-form">
+            <div class="aux-panel-close">
+                <div class="aux-close aux-cross-symbol aux-thick-medium"></div>
+            </div>
+            <div class="aux-search-field">
+
+            <div class="aux-search-section aux-404-search">
+                <div class="aux-search-form aux-iconic-search">
+            <form action="http://localhost/Heapmade/" method="get">
+            <div class="aux-search-input-form">
+                            <input type="text" class="aux-search-field" placeholder="Search..." name="s" autocomplete="off">
+                                    </div>
+                            <div class="aux-submit-icon-container auxicon-search-4 ">
+                    <input type="submit" class="aux-iconic-search-submit" value="Search">
+                </div>
+                        </form>
+        </div>
+<!-- end searchform -->
+                </div>
+
+            </div>
+        </section>
+        <!-- fullscreen search-->
+
+        <div class="aux-scroll-top"></div>
+    </div>
+
+    
+<!-- outputs by wp_footer -->
+<div id="ufw_1" class="ufw_wrap ufw_pp ufw_p_br ufw_wb_closed ufw_wb_hidden" data-open-anim="fadeInUp" data-close-anim="fadeOutDown" data-size="400px*650px" data-init-d="closed" data-init-m="closed" data-devices="all">
+<div class="ufw_wb "><div class="ufw_wb_inner"><section id="aux_contact_form-5" class="widget-container aux-widget-contact-form aux-parent-au6ee3f3ed  aux-open widget-container widget_aux_contact_form"><h3 class="widget-title">Contact Us</h3>            <div class="aux-col-wrapper aux-no-gutter">
+            <!-- @TODO - The output for element here -->
+
+            
+<div class="wpcf7 no-js" id="wpcf7-f367-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response">
+<p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul>
+</div>
+<form action="/Heapmade/index.php/full_stack_app/?simply_static_page=454#wpcf7-f367-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="367">
+<input type="hidden" name="_wpcf7_version" value="5.7.4">
+<input type="hidden" name="_wpcf7_locale" value="en_US">
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f367-o1">
+<input type="hidden" name="_wpcf7_container_post" value="0">
+<input type="hidden" name="_wpcf7_posted_data_hash" value="">
+</div>
+<p><label> Your name<br>
+<span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" autocomplete="name" aria-required="true" aria-invalid="false" value="" type="text" name="your-name"></span> </label>
+</p>
+<p><label> Your email<br>
+<span class="wpcf7-form-control-wrap" data-name="your-email"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" autocomplete="email" aria-required="true" aria-invalid="false" value="" type="email" name="your-email"></span> </label>
+</p>
+<p><label> Your message (optional)<br>
+<span class="wpcf7-form-control-wrap" data-name="your-message"><textarea cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" name="your-message"></textarea></span> </label>
+</p>
+<p><input class="wpcf7-form-control has-spinner wpcf7-submit" type="submit" value="Submit">
+</p>
+<div class="wpcf7-response-output" aria-hidden="true"></div>
+</form>
+</div>
+
+
+            </div>
+<!-- aux-col-wrapper -->
+    </section></div></div>
+<div class="ufw_btn_wrap"><a href="#" class="ufw_btn ufw_btn_48px ufw_btn_type_icon"><div class="ufw_btn_oinfo" title=""><i class="far fa-comment-alt"></i></div>
+<div class="ufw_btn_cinfo" title="Close"><i class="fas fa-times"></i></div></a></div>
+</div>
+<style>#ufw_1 .ufw_wb{
+    width: 100%;
+    height: 650px;
+    background-color: #ffffff;
+    border-width: 1px;
+    border-color: #0cd68a;
+    border-radius: 19px;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+}
+#ufw_1 .ufw_btn{
+    background-color: #0cd68a;
+    border-color: transparent;
+    border-width: 0px;
+    color: #ffffff;
+    border-radius: 64px;
+    
+}
+#ufw_1 .ufw_title, #ufw_1 .ufw_col{
+    border-color: #0cd68a;
+}</style>
+<script>(function() {function maybePrefixUrlField () {
+  const value = this.value.trim()
+  if (value !== '' && value.indexOf('http') !== 0) {
+    this.value = 'http://' + value
+  }
+}
+
+const urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]')
+for (let j = 0; j < urlFields.length; j++) {
+  urlFields[j].addEventListener('blur', maybePrefixUrlField)
+}
+})();</script><link rel="stylesheet" id="e-animations-css" href="./../../wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.11.1" media="all">
+<script src="./../../wp-includes/js/imagesloaded.min.js?ver=4.1.4" id="imagesloaded-js"></script>
+<script src="./../../wp-includes/js/masonry.min.js?ver=4.2.2" id="masonry-js"></script>
+<script src="./../../wp-content/themes/phlox/js/plugins.min.js?ver=2.11.0" id="auxin-plugins-js"></script>
+<script src="./../../wp-content/themes/phlox/js/scripts.min.js?ver=2.11.0" id="auxin-scripts-js"></script>
+<script src="./../../wp-content/plugins/auxin-elements/admin/assets/js/elementor/widgets.js?ver=2.11.1" id="auxin-elementor-widgets-js"></script>
+<script id="mediaelement-core-js-before">var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};</script>
+<script src="./../../wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.17" id="mediaelement-core-js"></script>
+<script src="./../../wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=6.2" id="mediaelement-migrate-js"></script>
+<script id="mediaelement-js-extra">var _wpmejsSettings = {"pluginPath":"\/Heapmade\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"auto","audioShortcodeLibrary":"mediaelement","videoShortcodeLibrary":"mediaelement"};</script>
+<script src="./../../wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.2" id="wp-mediaelement-js"></script>
+<script src="./../../wp-content/plugins/auxin-elements/public/assets/js/plugins.min.js?ver=2.11.1" id="auxin-elements-plugins-js"></script>
+<script src="./../../wp-content/plugins/auxin-elements/public/assets/js/scripts.js?ver=2.11.1" id="auxin-elements-scripts-js"></script>
+<script src="./../../wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.7.4" id="swv-js"></script>
+<script id="contact-form-7-js-extra">var wpcf7 = {"api":{"root":".\/\/index.php\/wp-json\/","namespace":"contact-form-7\/v1"}};</script>
+<script src="./../../wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.7.4" id="contact-form-7-js"></script>
+<script defer src="./../../wp-content/plugins/depicter/resources/scripts/player/depicter.js?ver=1681713206" id="depicter--player-js"></script>
+<script id="wp_ulike-js-extra">var wp_ulike_params = {"ajax_url":".\/\/wp-admin\/admin-ajax.php","notifications":"1"};</script>
+<script src="./../../wp-content/plugins/wp-ulike/assets/js/wp-ulike.min.js?ver=4.6.5" id="wp_ulike-js"></script>
+<script src="./../../wp-content/uploads/phlox/custom.js?ver=4.2" id="auxin-custom-js-js"></script>
+<script defer src="./../../wp-content/plugins/mailchimp-for-wp/assets/js/forms.js?ver=4.9.1" id="mc4wp-forms-api-js"></script>
+<script src="./../../wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.11.1" id="elementor-webpack-runtime-js"></script>
+<script src="./../../wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.11.1" id="elementor-frontend-modules-js"></script>
+<script src="./../../wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
+<script src="./../../wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
+<script src="./../../wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6" id="swiper-js"></script>
+<script src="./../../wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.11.1" id="share-link-js"></script>
+<script src="./../../wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.9.0" id="elementor-dialog-js"></script>
+<script id="elementor-frontend-js-before">var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.11.1","is_static":false,"experimentalFeatures":{"landing-pages":true,"kit-elements-defaults":true},"urls":{"assets":".\/\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper-container","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":664,"title":"Full%20Stack%20App%20Development%20%E2%80%93%20Hepmade","excerpt":"","featuredImage":false}};</script>
+<script src="./../../wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.11.1" id="elementor-frontend-js"></script>
+<script src="./../../wp-content/plugins/elementor/assets/js/preloaded-modules.min.js?ver=3.11.1" id="preloaded-modules-js"></script>
+<!-- end wp_footer -->
+</body>
+</html>
