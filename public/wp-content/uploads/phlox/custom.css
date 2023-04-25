@@ -161,3 +161,9 @@ body h4, body .aux-h4{ font-family:'Nunito'; }
 /* elementor-color-accent 
 =========================*/
 .aux-customize-preview.elementor-kit-250 {--e-global-color-accent: #61CE70;}
+/* menu-item-607 
+=========================*/
+.menu-item-607 { justify-content: left }
+/* menu-item-899 
+=========================*/
+.menu-item-899 { justify-content: left }
